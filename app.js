@@ -60,3 +60,37 @@
 //     $('.box1').removeClass('box1-ext');
 //   });
 // });
+
+// 7章
+// this前
+// $(function(){
+//   $('.bg1').on('click',function(){
+//     $('.bg1').slideUp();
+//   });
+
+//   $('.bg2').on('click',function(){
+//     $('.bg2').slideUp();
+//   });
+
+//   $('.bg3').on('click',function(){
+//     $('.bg3').slideUp();
+//   });
+
+//   $('.bg4').on('click',function(){
+//     $('.bg4').slideUp();
+//   });
+// });
+
+// this後
+//  $(function(){
+//   $('.box1').on('click',function(){
+//     $(this).slideUp();
+//   });
+//  });
+
+// children
+$(function(){
+  $('button').on('click',function(){
+    $('ul').children().css('color','red');
+  });
+});
